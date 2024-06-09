@@ -5,6 +5,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.min.css">
 </head>
 <body>
+    <a id="top"></a>
+    <a id="top-button" href="#top">⬆️ Top</a>
     <div class="container">
         <header class="main-header">
             <h1 class="title">Caner Kılıç</h1>
@@ -32,6 +34,10 @@
                 </p>
                 <p>
                     You can view some of <mark>my designs</mark> from my time at <mark>Turkish Technic Inc.</mark> and other projects on my personal website.
+                </p>
+                <p>
+                    <br>
+                    <i>*Click to enlarge the images.</i>
                 </p>
             </section>
 
@@ -226,4 +232,19 @@
         </footer>
     </div>
 </body>
+<script>
+    /*Scroll Top*/
+    let rootElem = document.documentElement;
+    let scrollElem = document.getElementById("top-button");
+
+    function handleScroll () {
+        let scrollTAmount = rootElem.scrollHeight - rootElem.clientHeight;
+        if  ((rootElem.scrollTop / scrollTAmount) > 0.20) {
+            scrollElem.classList.add("show");
+        } else {
+            scrollElem.classList.remove("show");
+        }
+    }
+    document.addEventListener("scroll", handleScroll)
+</script>
 </html>

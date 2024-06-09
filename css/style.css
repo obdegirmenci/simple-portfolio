@@ -163,6 +163,32 @@ a .card-img:hover {
 }
 
 /* STYLING*/
+#top-button {
+    padding: 1em .8em;
+    border-radius: .45em;
+    background:  var(--col-tertiary);
+    color: var(--col-txt);
+    text-decoration: none;
+    display: none;
+    z-index: 99;
+    position: fixed;
+    bottom: 2em;
+    right: 3.5em;
+    transition: transform .1s ease-in;
+}
+
+#top-button.show {
+    display: block !important;
+}
+
+#top-button:hover, #top-button:focus {
+    transform: translateY(-.25em);
+}
+
+#top-button:focus {
+    outline-style: solid;
+}
+
 hr {
 	width: 100%;
 	height: 2px;
