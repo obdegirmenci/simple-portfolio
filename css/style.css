@@ -152,6 +152,7 @@ a::selection {
 .card-img {
     width: 100%;
     height: auto;
+    aspect-ratio: 16 / 9;
     margin: auto;
     display: block;
     transform-origin: 50% 50%;
