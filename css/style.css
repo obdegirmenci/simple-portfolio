@@ -14,14 +14,12 @@ html {
     --col-bg-dark      :   #17171C;
     --col-txt          :   #40404A; /* Contrast:  9,78 : 1 */
     --col-txt-dark     :   #FFFFFA; /* Contrast: 10,21 : 1 */
-    --col-pri          :   var(--col-thy);
-    --col-pri-hl       :   #E0707D;
-    --col-sec          :   var(--col-thy-dark);
-    --col-sec-hl       :   #463E48;
+    --col-pri          :   #0054A8;
+    --col-pri-hl       :   #006EDC;
+    --col-sec          :   #2C4B6C;
+    --col-sec-hl       :   #305376;
     --col-tertiary     :   #EBEBE6;
     --col-tertiary-dark:   #2C2C33;
-    --col-thy          :   #C90119; /* THY NORMAL RED */
-    --col-thy-dark     :   #1A171B; /* THY INVERT     */
 
     background-color: var(--col-bg);
     color: var(--col-txt);
@@ -309,28 +307,19 @@ mark {
         /* COLOR SCHEME */
         --col-bg        :   var(--col-bg-dark);
         --col-txt       :   var(--col-txt-dark);
+        --col-pri       :   #67B3FF;
+        --col-pri-hl    :   #97CBFF;
         --col-tertiary  :   var(--col-tertiary-dark);
 
     }
+
     a::selection {
-        color: var(--col-txt-dark);
-        background-color: var(--col-pri);
+        color: var(--col-tertiary);
     }
+
     ::selection {
         color: var(--col-bg);
         background-color: var(--col-txt);
-    }
-
-    a, a:visited {
-        color: var(--col-txt);
-    }
-
-    a:hover {
-        color: var(--col-pri-hl);
-    }
-
-    hr {
-        background: linear-gradient(to right, var(--col-pri) 15%   , rgba(255, 255, 255, 0) 100%);
     }
 
     .summary::first-letter {
